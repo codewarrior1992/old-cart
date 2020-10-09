@@ -1,0 +1,89 @@
+.admin-coupons {
+	min-height: 100vh;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	padding: 30px;
+	.cards {
+		max-height: 660px;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include pad-media {
+			max-height: 100%;
+		}
+	}
+	.card {
+		border: 1px solid darken($light, 20%);
+		width: 31%;
+		text-align: left;
+		@include pad-media {
+			margin: 10px 10px 30px 10px;
+			width: 47%;
+		}
+		@include i6-media {
+			width: 100%;
+			margin: 15px;
+		}
+		.header {
+			width: 100%;
+			height: 200px;
+			background-position: center center;
+			background-size: cover;
+			position: relative;
+			@include pad-media {
+				height: 250px;
+			}
+			/* 		@include i6-media {
+
+			} */
+		}
+		.coupon {
+			color: #000;
+			background-color: $info;
+			position: absolute;
+			top: 25px;
+			left: 0;
+			padding: 10px;
+		}
+		.content {
+			padding: 25px;
+		}
+		h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		p {
+			line-height: 1.3;
+			font-size: 20px;
+			margin-bottom: 10px;
+			text-align: justify;
+			margin-bottom: 15px;
+		}
+		a {
+			color: $secondary;
+			font-style: oblique;
+			text-align: center;
+			display: inline-block;
+			width: 100%;
+		}
+		.footer {
+			position: relative;
+			background-color: $info;
+			color: #000;
+			font-weight: bold;
+			padding: 15px;
+			text-align: center;
+			margin-top: 15px;
+			z-index: 2;
+			cursor: pointer;
+			text-transform: none;
+			p {
+				text-align: center;
+				margin: 0;
+			}
+		}
+	}
+}

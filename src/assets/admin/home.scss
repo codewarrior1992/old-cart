@@ -1,0 +1,41 @@
+.admin-home {
+	margin-left: 0px;
+	min-height: 100vh;
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 15px;
+	.cards {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		margin: -15px;
+		.card {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex: 1 1 auto;
+			padding: 15px;
+			background-color: $light;
+			border: #ddd 1px solid;
+			margin: 15px;
+		}
+		.numbers {
+			text-align: right;
+			p {
+				margin-bottom: 10px;
+				font-size: 14px;
+				font-weight: 400;
+				color: #9a9a9a;
+			}
+			h4 {
+				columns: #333333;
+				font-weight: 300;
+				font-size: 22px;
+				line-height: 30px;
+			}
+		}
+	}
+}

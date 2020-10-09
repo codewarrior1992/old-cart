@@ -1,0 +1,32 @@
+.topbar-warper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	background-color: $light;
+	color: $secondary;
+	border-bottom: 1px solid #ddd;
+	.logout {
+		margin-left: auto;
+		background-color: $light;
+		color: $secondary;
+		border: 1px solid #999;
+		border-radius: 5px;
+		padding: 10px;
+		&:hover {
+			background-color: #999;
+			color: #ffffff;
+			border: 1px solid #fff;
+		}
+		@include pad-media {
+			display: none;
+		}
+	}
+	// i {
+	// 	display: none;
+	// 	cursor: pointer;
+	// 	@include pad-media {
+	// 		display: block;
+	// 	}
+	// }
+}

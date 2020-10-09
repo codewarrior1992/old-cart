@@ -1,0 +1,21 @@
+// setting
+@import './helpers/reset.scss';
+@import './helpers/mixin.scss';
+@import './helpers/variables.scss';
+
+// layout
+// @import './layout/client-navbar.scss';
+// @import './layout/client-bottom-info.scss';
+@import './layout/admin-topbar.scss';
+@import './layout/admin-sidebar.scss';
+@import './layout/pagination.scss';
+@import './layout/modal.scss';
+// views
+@import './admin/admin.scss';
+
+// components
+@import './admin/home.scss';
+@import './admin/products.scss';
+@import './admin/orders.scss';
+@import './admin/coupons.scss';
+@import './admin/controlbar.scss';

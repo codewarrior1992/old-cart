@@ -1,0 +1,165 @@
+.admin-products {
+	margin-left: 0px;
+	min-height: 100vh;
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 15px;
+	margin: 0 15px;
+	position: relative;
+
+	// controlbar & modal => flex
+	.controlbar-flex {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// product
+	ul.list {
+		display: flex;
+		flex-direction: column;
+		margin: 15px 0 0 0;
+		width: 100%;
+		height: 100%;
+		li {
+			display: flex;
+			background-color: #fff;
+			height: 100%;
+			width: 100%;
+			margin-bottom: 25px;
+			text-align: justify;
+			@include i6-media {
+				flex-direction: column;
+			}
+		}
+		.item-img {
+			position: relative;
+			min-width: 220px;
+			width: 220px;
+			height: auto;
+			background-size: cover;
+			background-position: center center;
+			@include i6-media {
+				width: 100%;
+				height: 175px;
+			}
+			@include mobile-media {
+				height: 150px;
+			}
+		}
+		.item-info {
+			display: flex;
+			flex-direction: column;
+			padding: 15px;
+		}
+		.item-title {
+			font-weight: bold;
+			font-size: 40px;
+			color: $primary;
+			@include i6-media {
+				text-align: center;
+				margin: 0;
+				font-size: 30px;
+			}
+		}
+		.item-content {
+			line-height: 1.3;
+			margin-top: 20px;
+			align-items: justify;
+			@include pad-media {
+				margin-top: 10px;
+			}
+			@include i6-media {
+				margin-top: 20px 20px 0 20px;
+			}
+			@include mobile-media {
+				// display: none;
+			}
+		}
+		.item-memo {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.memo-group {
+			color: $secondary;
+			font-size: 22px;
+			margin-right: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			@include pad-media {
+				width: 100%;
+			}
+			i {
+				margin-right: 5px;
+			}
+			span {
+				display: inline-block;
+				margin: 15px 15px 0 0;
+				@include pad-media {
+					margin: 15px 0 0 0;
+					width: 50%;
+					display: block;
+				}
+				@include i6-media {
+					font-size: 16px;
+				}
+			}
+			span:nth-child(2).success {
+				color: $info;
+			}
+			span:nth-child(2).fails {
+				color: $warning;
+			}
+		}
+		.btn-group {
+			display: flex;
+			width: 100%;
+			margin-top: 20px;
+			@include i6-media {
+				flex-direction: column;
+			}
+			.removeBtn {
+				display: none;
+				@include info-btn($danger, $white);
+			}
+			.updateBtn {
+				margin-left: 20px;
+				@include info-btn($dark, $white);
+				@include i6-media {
+					margin: 20px 0 0 0;
+				}
+			}
+			.removeBtn,
+			.updateBtn {
+				@include i6-media {
+					display: block;
+					border-radius: 0;
+					width: 100%;
+					border-radius: 8px;
+					i,
+					span {
+						display: none !important;
+					}
+				}
+			}
+			.removeBtn strong,
+			.updateBtn strong {
+				display: none;
+				@include i6-media {
+					display: block;
+					text-align: center;
+					height: 43px;
+					line-height: 43px;
+					letter-spacing: 1px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+// #1
+$main-font-family: 'Open Sans', sans-serif;
+$cn-font-family: 'Noto Serif TC', serif;
+// #2
+$primary: #5189d3;
+$secondary: #888;
+$lighten-secondary: lighten($secondary, 15%);
+$light: hsla(0, 0%, 100%, 0.96);
+$danger: #de5b6c;
+$warning: #f2a952;
+$info: #55df75;
+$white: #fff;
+$dark: #484848;
+
+// card
+$yellow: #f1c40f;
+$orange: #e74c3c;
+$blue: #3498db;
+$purple: #9b59b6;
+$green: #16a085;
+
+// #3
+.btn {
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid transparent;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+// #4
+body {
+	font-family: $main-font-family;
+	text-transform: capitalize;
+	min-height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+input[type='text'] {
+	padding: 0;
+	border: 1px solid;
+}
+
+.router-link-exact-active {
+	background: hsla(0, 0%, 100%, 0.5);
+}

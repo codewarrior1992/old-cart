@@ -1,0 +1,38 @@
+ul.pages {
+	display: flex;
+	.page a {
+		display: inline-block;
+		color: $dark;
+		text-align: center;
+		margin: 15px;
+		padding-bottom: 5px;
+		font-size: 30px;
+		@include i6-media {
+			font-size: 20px;
+		}
+		&:hover,
+		&.active {
+			color: $primary;
+			font-weight: bold;
+			border-bottom: 1px solid $primary;
+		}
+	}
+
+	.go a,
+	.back a {
+		display: inline-block;
+		color: $dark;
+		text-align: center;
+		margin: 15px;
+		padding-bottom: 5px;
+		font-size: 30px;
+		@include i6-media {
+			font-size: 20px;
+		}
+	}
+
+	.go a.disabled,
+	.back a.disabled {
+		display: none;
+	}
+}
